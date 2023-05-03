@@ -8,85 +8,80 @@
 
     <title>Błażej Wojciechowski - Portfolio</title>
 
-    <meta name="description" content="System linux." />
-    <meta name="keywords" content="Linux Mint i polecenia w bashu." />
+    <meta name="description" content="Tworzenie portfolio na stronie www." />
+    <meta name="keywords" content="zamów stronę, tworzenie, www, programista, portfolio, js, html, css" />
 
     <link rel="stylesheet" th:href="@{/styles.css}" type="text/css" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" th:href="@{/fontello.css}" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
     <div id="container">
 
-        <div id="logo">
-            Poznaj Linuxa :)
-        </div>
-
-        <div id="menu">
-            <div class="option">Strona główna</div>
-            <div class="option">Dystrybucje</div>
-            <div class="option">Instalacja</div>
-            <div class="option">Polecenia</div>
-            <div class="option">Linus Torvalds</div>
-            <div class="option">O projekcie</div>
+        <div class="rectangle">
+            <div id="logo"><a th:href="index.html" class="tileLinkHtml5"> Błażej Wojciechowski</a></div>
+            <div id="zegar">12:00:00</div>
             <div style="clear: both;"></div>
         </div>
 
-        <div id="topbar">
-            <div id="topbarL">
-                <img th:src="@{images/linux.png}">
+        <div class="square">
+
+            <div class="tile1">
+                <a th:href="kimjestem.html" class="tileLink"> <i class="icon-user"></i><br/>Kim jestem?</a>
             </div>
-            <div id="topbarR">
-            <span class="bigTitle"> O projekcie słów kilka</span>
-            <div style="height: 15px"></div>
-                Kiedy mówisz: "Napisałem program ale nic nie działa"
+
+            <a th:href="oferta.html" class="tileLinkHtml5">
+            <div class="tile1">
+                <i class="icon-laptop"></i><br/>Co oferuję?
+            </div>
+            </a>
+
+            <div style="clear: both;"></div>
+
+            <div class="tile2">
+                <a th:href="cv.html" class="tileLink"><i class="icon-graduation-cap"></i><br/>Curriculum vitae</a>
+            </div>
+
+            <div class="tile3">
+                <a th:href="kontakt.html" class="tileLink"><i class="icon-mail"></i><br/>Kontakt ze mną</a>
+            </div>
+
+            <div style="clear: both;"></div>
+
+            <div class="tile4">
+                Talk is cheap. Show me the code!<br/> Linus Torvalds, twórca Linuxa
+            </div>
+
+        </div>
+
+        <div class="square">
+            <div class="tile5">
+                Tytuł podstrony<br/><br/>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed turpis sodales, congue libero quis,
+                tincidunt nunc. Sed eget enim consectetur, facilisis tellus at, faucibus sapien. Sed elementum dapibus
+                augue ut consectetur. Aenean risus dolor, posuere in convallis vehicula, aliquam et nisi. Integer sit
+                amet elit at risus pretium tincidunt. Donec nisl libero, placerat eu vestibulum eget, lacinia et dolor.
+            </div>
+            <div class="yt">
+                <a href="https://youtube.com" class="socialLink" target="_blank"><i class="icon-youtube"></i></a>
+            </div>
+            <div class="fb">
+                <a href="https://facebook.com" class="socialLink" target="_blank"><i class="icon-facebook-squared"></i></a>
+            </div>
+            <div class="gplus">
+                <a href="https://plus.google.com" class="socialLink" target="_blank"><i class="icon-gplus"></i></a>
+            </div>
+            <div class="tw">
+                <a href="https://twitter.com" class="socialLink" target="_blank"><i class="icon-twitter"></i></a>
             </div>
             <div style="clear: both;"></div>
         </div>
+        <div style="clear: both"></div>
 
-        <div id="sidebar">
-            <div class="optionL">Strona główna</div>
-            <div class="optionL">Dystrybucje</div>
-            <div class="optionL">Instalacja</div>
-            <div class="optionL">Polecenia</div>
-            <div class="optionL">Linus Torvalds</div>
-            <div class="optionL">O projekcie</div>
-        </div>
-
-        <div id="content">
-            <span class="bigTitle">Dlaczego Linux?</span>
-            <div class="dottedLine"></div>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus urna erat, sed tempus arcu porta ac.
-            Integer erat lacus, scelerisque quis diam at, pretium vehicula tortor. Nulla orci nisi, malesuada sed urna
-            pulvinar, varius fermentum lectus. Praesent ac nulla quis massa pulvinar blandit. Mauris et dui vitae erat
-            consequat elementum. Mauris mattis posuere justo, tempus lobortis leo aliquet sed. Praesent commodo iaculis
-            lectus. Aenean elementum porta metus, in aliquam ipsum commodo a. Vivamus consectetur enim quis sem ultricies,
-            quis gravida tellus facilisis. Aliquam erat volutpat. Mauris ac erat sed lectus ultrices laoreet. Nam turpis
-            ex, faucibus a tempus id, commodo et augue. Donec dapibus auctor dui, sit amet cursus nisl imperdiet a.
-            Aliquam interdum sodales diam non elementum. In posuere consequat urna lacinia sagittis.
-            <br /><br />
-            Donec semper venenatis sapien id finibus. Donec id aliquam dolor, at finibus ante. Donec lobortis, libero ac
-            luctus consequat, nulla eros pharetra magna, sit amet sodales ipsum libero sed libero. Cras in metus elit.
-            Cras malesuada, purus quis eleifend maximus, neque erat egestas metus, at maximus mauris tortor id ligula.
-            Donec nibh tortor, pellentesque fringilla libero et, mollis vestibulum dui. Etiam commodo enim vitae eros
-            dictum iaculis. Duis orci mauris, convallis sed scelerisque vitae, fringilla quis ex. Proin imperdiet
-            suscipit ipsum, et aliquam magna dignissim sed. Suspendisse rhoncus metus eu consectetur dignissim.
-            Sed placerat sodales urna, et vulputate neque.
-            <br /><br />
-            Donec ornare suscipit mollis. Mauris dapibus consequat aliquam. Quisque commodo nunc metus, sit amet mattis
-            elit dictum vitae. Cras rutrum neque at lectus pulvinar, in rutrum sapien condimentum. Maecenas lacus quam,
-            dignissim nec congue in, pharetra nec tortor. Aenean interdum lacinia libero vel porttitor. Vestibulum
-            sodales eget enim a congue. Praesent ac erat quis est vestibulum ornare imperdiet id nibh. Etiam ipsum mi,
-            porttitor eget arcu pretium, fringilla viverra elit. Cras suscipit augue nibh, ac aliquam turpis accumsan vitae.
-            Proin elementum at ante sagittis egestas. Curabitur ullamcorper neque est, eu pellentesque neque euismod sit
-            amet. Sed ipsum justo, facilisis ac tortor vitae, feugiat congue ligula. Suspendisse augue urna, porttitor
-            ut lobortis eget, bibendum vitae odio. Integer eleifend tempor nisi at suscipit. Sed congue eros eget massa
-            molestie consectetur.
-        </div>
-        <div id="footer">
-            Poznaj Linuxa - najlepszy darmowy system operacyjny. Strona w sieci od 2014r. &copy; Wszelkie prawa zastrzeżone
-        </div>
+        <div class="rectangle">2023 &copy; Błażej Wojciechowsski - Portfolio. Programista webowy.
+            <i class="icon-mail-alt"></i> wojciechowskiblazej1@gmail.com</div>
 
     </div>
 </body>
